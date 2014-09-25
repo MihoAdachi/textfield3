@@ -36,3 +36,7 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+#ENV['NOKOGIRI_USE_SYSTEM_LIBRARIES'] = 'YES'
+gem 'nokogiri','1.6.3.1'

@@ -1,9 +1,10 @@
-<h1>Listing users</h1>
+<h1>好きな食べ物を英語に訳します</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Food</th>
+    <th>名前</th>
+    <th>好きな食べ物</th>
+    <th>食べ物の英訳</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.food %></td>
+    <td><%= translate_jp_to_en(user.food) %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
